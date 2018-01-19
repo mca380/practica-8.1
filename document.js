@@ -12,11 +12,3 @@ function loadJSON(callback) {
     };
     xobj.send(null);  
 }
-
-function viewJSON() {
-    loadJSON(function(response) {
-        /* Aqui l'objecte response representa l'objecte JSON que ens 
-           ha retornat el servidor */
-        document.getElementById("results").innerHTML = response.results[0].name;
-    });
-}
